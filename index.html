@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מסור ולמד</title>
+    <meta name="description" content="משחק ''מסור ולמד'' לשאלות חד-ברירה" />
+    <meta name="keywords" content="משחק, לימודי, כדורגל, מסור, ולמד, שאלות, חד, ברירה" />
+    <meta name="author" content="אסף זיתוני ואביתר כהן" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a id="log" href="index.html">
+                <img id="logo" src="images/logo-15.png" /> <!--הלוגו של המשחק שלכם-->
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p> <img id="logo2" src="images/logo-15.png" /></p>
+            <p>אפיון ופיתוח: <i>אסף זיתוני ואביתר כהן</i> </p>
+
+            <p>
+                פותח במסגרת פרויקט בקורסים: <br />
+                סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט
+            </p>
+            <p>
+                <a id="log" href="http://www.hit.ac.il/telem/overview">
+                    הפקולטה לטכנולוגיות למידה
+                </a>
+                <br />
+
+                המכון הטכנולוגי חולון
+            </p>
+
+            <img id="hit" src="images/hit.png" />
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/VtUq_DKpkQw?playlist=VtUq_DKpkQw&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+
+            <iframe src="passAndPlay.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
